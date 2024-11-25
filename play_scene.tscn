@@ -1,0 +1,75 @@
+[gd_scene load_steps=10 format=3 uid="uid://bdotyvh1s1l3i"]
+
+[ext_resource type="Texture2D" uid="uid://dnewgrw660utl" path="res://saron.png" id="1_epxg1"]
+[ext_resource type="PackedScene" uid="uid://c7oinjllc42oc" path="res://saron_key.tscn" id="2_gpmms"]
+[ext_resource type="AudioStream" uid="uid://dfpqqxrmscw5u" path="res://audio/29661__tedthetrumpet__sp3.mp3" id="4_jd733"]
+[ext_resource type="AudioStream" uid="uid://cfipvsujix1lq" path="res://audio/29660__tedthetrumpet__sp2.mp3" id="4_jp25n"]
+[ext_resource type="AudioStream" uid="uid://5otu0mq4aqrk" path="res://audio/29662__tedthetrumpet__sp4.mp3" id="5_5l3ou"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rjxf7"]
+size = Vector2(76, 219)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htnds"]
+size = Vector2(65, 208)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0msmc"]
+size = Vector2(63, 203)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vc0dh"]
+size = Vector2(60, 191)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Saron" type="Sprite2D" parent="."]
+position = Vector2(565.297, 331.75)
+scale = Vector2(1.21594, 1.21594)
+texture = ExtResource("1_epxg1")
+
+[node name="SaronKey1" parent="." instance=ExtResource("2_gpmms")]
+position = Vector2(376, 362)
+
+[node name="KeyShape" parent="SaronKey1" index="0"]
+position = Vector2(0, 3)
+
+[node name="SaronKey2" parent="." instance=ExtResource("2_gpmms")]
+position = Vector2(460, 361)
+
+[node name="KeyShape" parent="SaronKey2" index="0"]
+position = Vector2(0, 4.5)
+shape = SubResource("RectangleShape2D_rjxf7")
+
+[node name="KeyAudio" parent="SaronKey2" index="1"]
+stream = ExtResource("4_jp25n")
+
+[node name="SaronKey3" parent="." instance=ExtResource("2_gpmms")]
+position = Vector2(544, 361)
+
+[node name="KeyShape" parent="SaronKey3" index="0"]
+position = Vector2(-6.5, 5)
+shape = SubResource("RectangleShape2D_htnds")
+
+[node name="KeyAudio" parent="SaronKey3" index="1"]
+stream = ExtResource("4_jd733")
+
+[node name="SaronKey4" parent="." instance=ExtResource("2_gpmms")]
+position = Vector2(627, 367)
+
+[node name="KeyShape" parent="SaronKey4" index="0"]
+position = Vector2(-18.5, -2.5)
+shape = SubResource("RectangleShape2D_0msmc")
+
+[node name="KeyAudio" parent="SaronKey4" index="1"]
+stream = ExtResource("5_5l3ou")
+
+[node name="SaronKey5" parent="." instance=ExtResource("2_gpmms")]
+position = Vector2(677, 365)
+
+[node name="KeyShape" parent="SaronKey5" index="0"]
+position = Vector2(-1, 0.5)
+shape = SubResource("RectangleShape2D_vc0dh")
+
+[editable path="SaronKey1"]
+[editable path="SaronKey2"]
+[editable path="SaronKey3"]
+[editable path="SaronKey4"]
+[editable path="SaronKey5"]
