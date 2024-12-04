@@ -1,0 +1,333 @@
+{
+    "event": [
+        {
+            "type": "text",
+            "value": "Buka"
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 3
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 3
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 5
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 7
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "key",
+            "opt": true,
+            "value": 2
+        },
+        {
+            "type": "text",
+            "value": "A"
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 7
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 7
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 3
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 5
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 7
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": true,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 7
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 7
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 5
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": true,
+            "value": 3
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 5
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 5
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 3
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": true,
+            "value": 5
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 3
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 2
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 3
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 6
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 5
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": false,
+            "value": 3
+        },
+        {
+            "type": "delay"
+        },
+        {
+            "type": "key",
+            "opt": true,
+            "value": 2
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bdotyvh1s1l3i"]
+[gd_scene load_steps=18 format=3 uid="uid://bdotyvh1s1l3i"]
 
 [ext_resource type="Script" path="res://saron.gd" id="1_5ghkp"]
 [ext_resource type="Texture2D" uid="uid://dnewgrw660utl" path="res://saron.png" id="1_epxg1"]
@@ -9,6 +9,8 @@
 [ext_resource type="AudioStream" uid="uid://bwnyyjwfg5sft" path="res://audio/29663__tedthetrumpet__sp5.mp3" id="6_lesqq"]
 [ext_resource type="AudioStream" uid="uid://bsucd0fubq7w2" path="res://audio/29664__tedthetrumpet__sp6.mp3" id="7_7xav8"]
 [ext_resource type="AudioStream" uid="uid://dpoguu3krvqyh" path="res://audio/29658__tedthetrumpet__sp7.mp3" id="8_84tkf"]
+[ext_resource type="Theme" uid="uid://cfjmtdu7tdcko" path="res://app_theme.tres" id="10_5kveu"]
+[ext_resource type="Texture2D" uid="uid://bbpk0ar6us7g7" path="res://img/back.png" id="10_vtska"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjxf7"]
 size = Vector2(76, 219)
@@ -47,10 +49,12 @@ texture = ExtResource("1_epxg1")
 [node name="SaronKey1" parent="Saron" instance=ExtResource("2_gpmms")]
 position = Vector2(-155.68, 27.3451)
 scale = Vector2(0.822409, 0.822409)
+metadata/key_number = 1
 
 [node name="SaronKey2" parent="Saron" instance=ExtResource("2_gpmms")]
 position = Vector2(-86.5972, 27.345)
 scale = Vector2(0.822409, 0.822409)
+metadata/key_number = 2
 
 [node name="KeyShape" parent="Saron/SaronKey2" index="0"]
 shape = SubResource("RectangleShape2D_rjxf7")
@@ -61,6 +65,7 @@ stream = ExtResource("4_jp25n")
 [node name="SaronKey3" parent="Saron" instance=ExtResource("2_gpmms")]
 position = Vector2(-23.0275, 27.7563)
 scale = Vector2(0.822409, 0.822409)
+metadata/key_number = 3
 
 [node name="KeyShape" parent="Saron/SaronKey3" index="0"]
 shape = SubResource("RectangleShape2D_htnds")
@@ -71,6 +76,7 @@ stream = ExtResource("4_jd733")
 [node name="SaronKey4" parent="Saron" instance=ExtResource("2_gpmms")]
 position = Vector2(35.1194, 27.3451)
 scale = Vector2(0.822409, 0.822409)
+metadata/key_number = 4
 
 [node name="KeyShape" parent="Saron/SaronKey4" index="0"]
 shape = SubResource("RectangleShape2D_0msmc")
@@ -81,6 +87,7 @@ stream = ExtResource("5_5l3ou")
 [node name="SaronKey5" parent="Saron" instance=ExtResource("2_gpmms")]
 position = Vector2(91.0431, 27.3451)
 scale = Vector2(0.822409, 0.822409)
+metadata/key_number = 5
 
 [node name="KeyShape" parent="Saron/SaronKey5" index="0"]
 shape = SubResource("RectangleShape2D_vc0dh")
@@ -91,6 +98,7 @@ stream = ExtResource("6_lesqq")
 [node name="SaronKey6" parent="Saron" instance=ExtResource("2_gpmms")]
 position = Vector2(142.033, 27.3451)
 scale = Vector2(0.822409, 0.822409)
+metadata/key_number = 6
 
 [node name="KeyShape" parent="Saron/SaronKey6" index="0"]
 shape = SubResource("RectangleShape2D_jb0e1")
@@ -101,12 +109,33 @@ stream = ExtResource("7_7xav8")
 [node name="SaronKey7" parent="Saron" instance=ExtResource("2_gpmms")]
 position = Vector2(190.555, 27.3451)
 scale = Vector2(0.822409, 0.822409)
+metadata/key_number = 7
 
 [node name="KeyShape" parent="Saron/SaronKey7" index="0"]
 shape = SubResource("RectangleShape2D_iuksd")
 
 [node name="KeyAudio" parent="Saron/SaronKey7" index="1"]
 stream = ExtResource("8_84tkf")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -620.011
+offset_top = -344.709
+offset_right = -580.011
+offset_bottom = -304.709
+
+[node name="Back" type="Button" parent="HBoxContainer"]
+custom_minimum_size = Vector2(95, 80)
+layout_mode = 2
+theme = ExtResource("10_5kveu")
+icon = ExtResource("10_vtska")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="HBoxContainer/Back" to="." method="_on_back_pressed"]
 
 [editable path="Saron/SaronKey1"]
 [editable path="Saron/SaronKey2"]
